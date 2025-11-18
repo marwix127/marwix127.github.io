@@ -1,4 +1,22 @@
-@charset "UTF-8";
+/* ====== Custom additions for portfolio improvements ====== */
+/* Compact header so the green band fits closely to the text */
+.masthead{padding-top:0.6rem !important; padding-bottom:0.6rem !important; min-height: auto !important;}
+
+/* Margin so the fixed navbar doesn't hide the portfolio heading */
+#portfolio { margin-top: 5rem; }
+
+.project-item { padding: .6rem .8rem; border-radius: .5rem; transition: transform .15s, box-shadow .15s; }
+.project-item:hover { transform: translateY(-4px); box-shadow:0 6px 18px rgba(0,0,0,.08); }
+
+/* Skill bars used in CV section */
+.skill-bar{ height:10px; background:#e9ecef; border-radius:6px; overflow:hidden; }
+.skill-bar > span{ display:block; height:100%; background: linear-gradient(90deg,#007bff,#66d9ff); }
+
+/* Make small CTAs less heavy */
+.btn-sm{ padding:.25rem .5rem; font-size:.8rem; }
+
+/* Responsive tweak: center the list on small devices */
+@media (max-width: 576px){ #portfolio { margin-top: 4rem; } .project-item{ font-size:.95rem; } }
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2023 Start Bootstrap

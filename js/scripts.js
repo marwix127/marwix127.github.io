@@ -51,4 +51,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Lazy-load videos inside portfolio modals: set <video data-src="..."> and they will load/play when modal is shown
+    const portfolioModals = document.querySelectorAll('.portfolio-modal');
+    portfolioModals.forEach(modalEl => {
+        modalEl.addEventListener('shown.bs.modal', () => {
+            const v = modalEl.querySelector('video[data-src]');
+            if (v && !v.src) {
+                v.src = v.dataset.src;
+                v.load();
+                // Try to play (may be blocked by browser if not muted)
+                v.play().catch(() => {});
+            }
+        });
+        modalEl.addEventListener('hidden.bs.modal', () => {
+            const v = modalEl.querySelector('video');
+            if (v) { v.pause(); v.currentTime = 0; }
+        });
+    });
+
 });
