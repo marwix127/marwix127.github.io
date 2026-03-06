@@ -4,26 +4,28 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Proyectos</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="description"
         content="Marcel — Desarrollador de apps multiplataforma. Portafolio con proyectos, habilidades y contacto." />
     <meta name="keywords" content="Desarrollador móvil, Flutter, React, Node.js, microservicios, Marcel CV" />
+    <meta name="author" content="Marcel El Mouhajir Moncunill" />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Marcel — Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Open Graph -->
     <meta property="og:title" content="Marcel — Portafolio" />
     <meta property="og:description"
         content="Desarrollador de apps multiplataforma. Proyectos, certificaciones y contacto." />
     <meta property="og:image" content="assets/img/avatar.jpg" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://marwix127.github.io/" />
-    <!-- Font Awesome icons (free version)-->
+    <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -51,13 +53,22 @@
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container">
-            <h1 class="masthead-heading text-uppercase mb-1" style="font-size:2rem;">Marcel</h1>
-            <p class="masthead-subheading mb-0" style="font-size:1rem;">Desarrollador de apps multiplataforma</p>
-            <p class="text-center text-secondary">Portfolio QA: <a
-                    href="https://marwix127.github.io/qa-portfolio">marwix127.github.io/qa-portfolio</a></p>
+    <!-- Masthead / Hero -->
+    <header class="masthead text-center">
+        <div class="container" style="position:relative;z-index:1;">
+            <!-- Avatar -->
+
+            <h1 class="masthead-heading">Marcel</h1>
+            <p class="masthead-subheading">Desarrollador de apps multiplataforma</p>
+            <a href="https://marwix127.github.io/qa-portfolio" class="masthead-qa-link" target="_blank">
+                <i class="fas fa-flask me-1"></i> Portfolio QA
+            </a>
+        </div>
+        <!-- Scroll hint -->
+        <div style="padding-top: 24px;">
+            <div class="scroll-hint">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </header>
     <!-- Portfolio Section-->
@@ -190,124 +201,148 @@
         </div>
     </section>
     <!--Certifications Section -->
-    <!-- Sustituye las dos secciones por este bloque justo después de Portfolio -->
-
-    <section class="page-section bg-light" id="cv">
+    <section class="page-section bg-light reveal" id="cv">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Sobre mí -->
-                <div class="col-lg-6 mb-4">
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sobre mí</h2>
+                <div class="col-lg-6 mb-5">
+                    <h2 class="page-section-heading text-center mb-0">Sobre mí</h2>
                     <div class="divider-custom">
                         <div class="divider-custom-line"></div>
                         <div class="divider-custom-icon"><i class="fas fa-user"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
                     <p class="lead">
-                        Desarrollador de software con experiencia en el desarrollo de aplicaciones (principalmente
-                        backend) y en servicios y computación cloud.
-                        Apasionado por la resolución de problemas y la creación de soluciones eficientes. Busco una
-                        oportunidad para aplicar mis
-                        conocimientos y seguir creciendo en un entorno profesional.
+                        Desarrollador de software con experiencia en aplicaciones (principalmente backend)
+                        y servicios cloud. Apasionado por resolver problemas y crear soluciones eficientes.
+                        Busco una oportunidad para aplicar mis conocimientos y seguir creciendo.
                     </p>
-                    <ul style="font-size: 1.25rem;">
-                        <li><strong>Lenguajes </strong><br> Java, JavaScript, C#, C++ </li>
-                        <li><strong>Tecnologías:</strong><br>Flutter, .NET, AWS Cloud, Node.js, Spring Boot, React,
-                            Android, </li>
-                        <li><strong>Idiomas:</strong><br> Español (nativo), Catalán (nativo), Inglés (C1)</li>
+                    <ul>
+                        <li>
+                            <strong>Lenguajes</strong><br />
+                            <div class="skill-tags mt-1">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Dart</span>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Tecnologías</strong><br />
+                            <div class="skill-tags mt-1">
+                                <span class="skill-tag">Flutter</span>
+                                <span class="skill-tag">.NET / ASP.NET</span>
+                                <span class="skill-tag">AWS Cloud</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Android</span>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Idiomas</strong><br />
+                            <div class="skill-tags mt-1">
+                                <span class="skill-tag">Español (nativo)</span>
+                                <span class="skill-tag">Catalán (nativo)</span>
+                                <span class="skill-tag">Inglés C1</span>
+                            </div>
+                        </li>
                     </ul>
                     <p class="text-center mt-4">
                         <a href="https://www.linkedin.com/in/marcelelmouhajirmoncunill/" class="btn btn-primary mx-1"
-                            target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                            target="_blank" id="btn-linkedin">
+                            <i class="fab fa-linkedin me-1"></i> LinkedIn
                         </a>
-                        <a href="https://github.com/marwix127" class="btn btn-dark mx-1" target="_blank">
-                            <i class="fab fa-github"></i> GitHub
+                        <a href="https://github.com/marwix127" class="btn btn-dark mx-1" target="_blank"
+                            id="btn-github">
+                            <i class="fab fa-github me-1"></i> GitHub
                         </a>
-                        <a href="assets/cv.pdf" class="btn btn-success mx-1" target="_blank" download>
-                            <i class="fas fa-file-download"></i> CV Completo
+                        <a href="assets/cv.pdf" class="btn btn-success mx-1" target="_blank" download id="btn-cv-es">
+                            <i class="fas fa-file-download me-1"></i> CV Español
                         </a>
-                        <a href="assets/cv_eng.pdf" class="btn btn-success mx-1" target="_blank" download>
-                            <i class="fas fa-file-download"></i> CV English
+                        <a href="assets/cv_eng.pdf" class="btn btn-success mx-1" target="_blank" download
+                            id="btn-cv-en">
+                            <i class="fas fa-file-download me-1"></i> CV English
                         </a>
                     </p>
                 </div>
                 <!-- Certificaciones -->
-                <div class="col-lg-6 mb-4">
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                        Certificaciones
-                    </h2>
+                <div class="col-lg-6 mb-5">
+                    <h2 class="page-section-heading text-center mb-0">Certificaciones</h2>
                     <div class="divider-custom">
                         <div class="divider-custom-line"></div>
-                        <i class="fas fa-certificate"></i>
+                        <div class="divider-custom-icon"><i class="fas fa-certificate"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <ul style="font-size: 1.25rem;">
-                        <li><strong>Microsoft:</strong> Backend Development with .NET</li>
-                        <li><strong>Amazon Web Services:</strong> AWS Cloud Technical Essentials</li>
-                        <li><strong>DevTalles:</strong> Flutter de 0 a experto, Node.js de 0 a experto</li>
-                        <li><strong>Kaggle:</strong> Python & Intro Machine Learning</li>
-                        <li><strong>Google:</strong> Mobile App Development</li>
-                        <li><strong>Cegid XRPEnterprise:</strong> No-code & Low-Code</li>
+                    <ul>
+                        <li><strong>Microsoft</strong><br /><small>Backend Development with .NET</small></li>
+                        <li><strong>Amazon Web Services</strong><br /><small>AWS Cloud Technical Essentials</small></li>
+                        <li><strong>DevTalles</strong><br /><small>Flutter de 0 a experto · Node.js de 0 a
+                                experto</small></li>
+                        <li><strong>Kaggle</strong><br /><small>Python &amp; Intro to Machine Learning</small></li>
+                        <li><strong>Google</strong><br /><small>Mobile App Development</small></li>
+                        <li><strong>Cegid XRPEnterprise</strong><br /><small>No-code &amp; Low-Code</small></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <!-- Contact Section -->
+
+    <section class="page-section reveal" id="contact">
         <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
-            <!-- Icon Divider-->
+            <h2 class="page-section-heading text-center mb-0">Contacto</h2>
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-paper-plane"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Form-->
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <div class="text-center mb-4">
-                        <h4 class="mb-3">¿Quieres contactar conmigo?</h4>
+                <div class="col-lg-6 col-xl-5">
+                    <div class="contact-card">
+
                         <p>
-                            <i class="fas fa-envelope fa-fw me-2"></i>
-                            <a>marwix12@gmail.com</a>
+                            <i class="fas fa-envelope fa-fw me-2" style="color:var(--accent-2);"></i>
+                            <a href="mailto:marwix12@gmail.com" id="contact-email">marwix12@gmail.com</a>
                         </p>
-                        <p>
-                            <i class="fas fa-phone fa-fw me-2"></i>
-                            <a>+34 653 27 04 12</a>
+                        <p class="mb-0">
+                            <i class="fas fa-phone fa-fw me-2" style="color:var(--accent-1);"></i>
+                            <a href="tel:+34653270412" id="contact-phone">+34 653 27 04 12</a>
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="footer text-center">
         <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">
-                        Barcelona, Spain
-                    </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4>Ubicación</h4>
+                    <p class="lead">Barcelona, España</p>
                 </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Other Links</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fa-brands fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4>Redes</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/marwix127" target="_blank"
+                        id="footer-github" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/marcelelmouhajirmoncunill/" target="_blank"
+                        id="footer-linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
                 </div>
-                <!-- Footer About Text-->
-
             </div>
         </div>
     </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+    <!-- Copyright -->
+    <div class="copyright text-center">
+        <div class="container"><small>© 2026 Marcel El Mouhajir Moncunill · Barcelona</small></div>
     </div>
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
@@ -738,15 +773,53 @@ text-center pb-5">
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Portfolio enhancements: scroll-reveal + nav shadow + lazy video + scrollspy -->
+    <script>
+        // Navbar shadow on scroll
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('navbar-scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Scroll-reveal (IntersectionObserver)
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => revealObs.observe(el));
+
+        // ScrollSpy: marca el enlace activo según la sección visible
+        const sections = document.querySelectorAll('section[id], header[id]');
+        const navLinks = document.querySelectorAll('#mainNav .nav-link');
+        const spyObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, {
+            rootMargin: '-40% 0px -50% 0px', // activa cuando la sección ocupa el centro de la pantalla
+            threshold: 0
+        });
+        sections.forEach(s => spyObs.observe(s));
+
+        // Lazy-load video inside modal
+        document.querySelectorAll('.portfolio-modal').forEach(modal => {
+            modal.addEventListener('show.bs.modal', () => {
+                const v = modal.querySelector('video[data-src]');
+                if (v) { v.src = v.dataset.src; delete v.dataset.src; }
+            });
+        });
+    </script>
 </body>
 
 </html>
