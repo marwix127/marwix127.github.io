@@ -55,17 +55,27 @@ window.addEventListener('DOMContentLoaded', event => {
     const portfolioModals = document.querySelectorAll('.portfolio-modal');
     portfolioModals.forEach(modalEl => {
         modalEl.addEventListener('shown.bs.modal', () => {
-            const v = modalEl.querySelector('video[data-src]');
-            if (v && !v.src) {
-                v.src = v.dataset.src;
-                v.load();
-                // Try to play (may be blocked by browser if not muted)
-                v.play().catch(() => {});
+            const v = modalEl.querySelector('video');
+            if (v) {
+                if (v.dataset.src && !v.src) {
+                    v.src = v.dataset.src;
+                    v.load();
+                }
+                // Try to play with sound first (since it follows user click)
+                v.muted = false;
+                v.play().catch(() => {
+                    // Fallback to muted autoplay if browser blocks unmuted play
+                    v.muted = true;
+                    v.play().catch(e => console.error("Video play failed:", e));
+                });
             }
         });
         modalEl.addEventListener('hidden.bs.modal', () => {
             const v = modalEl.querySelector('video');
-            if (v) { v.pause(); v.currentTime = 0; }
+            if (v) {
+                v.pause();
+                v.currentTime = 0;
+            }
         });
     });
 

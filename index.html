@@ -555,7 +555,7 @@
                                 </div>
                                 <!-- Portfolio Modal - Image-->
                                 <video class="img-fluid rounded mb-5 w-50" data-src="assets/videos/stronger-demo.mp4"
-                                    controls loop muted></video>
+                                    controls loop playsinline></video>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">
                                     Aplicación móvil de gestión de entrenamientos y dietas con IA. Permite a los
@@ -812,13 +812,6 @@ text-center pb-5">
         });
         sections.forEach(s => spyObs.observe(s));
 
-        // Lazy-load video inside modal
-        document.querySelectorAll('.portfolio-modal').forEach(modal => {
-            modal.addEventListener('show.bs.modal', () => {
-                const v = modal.querySelector('video[data-src]');
-                if (v) { v.src = v.dataset.src; delete v.dataset.src; }
-            });
-        });
     </script>
 </body>
 
