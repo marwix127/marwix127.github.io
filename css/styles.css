@@ -13557,3 +13557,41 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* ---------- Carousel controls (visibilidad sobre fondo oscuro) ---------- */
+#carousel-contractlens .carousel-control-prev,
+#carousel-contractlens .carousel-control-next {
+  width: 3rem;
+  opacity: 1;
+}
+
+#carousel-contractlens .carousel-control-prev-icon,
+#carousel-contractlens .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.65rem;
+  border-radius: 50%;
+  background-color: var(--accent-2, #60a5fa);
+  background-size: 1.2rem 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  transition: background-color var(--transition, 0.25s), transform var(--transition, 0.25s);
+}
+
+#carousel-contractlens .carousel-control-prev:hover .carousel-control-prev-icon,
+#carousel-contractlens .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--accent-1, #6ee7b7);
+  transform: scale(1.08);
+}
+
+#carousel-contractlens .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.45);
+  opacity: 1;
+}
+
+#carousel-contractlens .carousel-indicators .active {
+  background-color: var(--accent-1, #6ee7b7);
+}
