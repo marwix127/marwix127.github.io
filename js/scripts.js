@@ -79,4 +79,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Make the compact project index fully keyboard-accessible.
+    const projectItems = document.querySelectorAll('.project-item[data-bs-target]');
+    projectItems.forEach(item => {
+        const projectName = item.querySelector('.fw-bold')?.textContent?.trim() || 'proyecto';
+        item.setAttribute('role', 'button');
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('aria-label', `Abrir detalles de ${projectName}`);
+        item.addEventListener('keydown', event => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+            event.preventDefault();
+            const modalElement = document.querySelector(item.dataset.bsTarget);
+            if (modalElement) {
+                bootstrap.Modal.getOrCreateInstance(modalElement).show();
+            }
+        });
+    });
+
 });
