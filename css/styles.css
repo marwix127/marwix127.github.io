@@ -13557,13 +13557,17 @@ html {
 
 /* ---------- Carousel controls (visibilidad sobre fondo oscuro) ---------- */
 #carousel-contractlens .carousel-control-prev,
-#carousel-contractlens .carousel-control-next {
+#carousel-contractlens .carousel-control-next,
+#carousel-stronger .carousel-control-prev,
+#carousel-stronger .carousel-control-next {
   width: 3rem;
   opacity: 1;
 }
 
 #carousel-contractlens .carousel-control-prev-icon,
-#carousel-contractlens .carousel-control-next-icon {
+#carousel-contractlens .carousel-control-next-icon,
+#carousel-stronger .carousel-control-prev-icon,
+#carousel-stronger .carousel-control-next-icon {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0.65rem;
@@ -13575,12 +13579,15 @@ html {
 }
 
 #carousel-contractlens .carousel-control-prev:hover .carousel-control-prev-icon,
-#carousel-contractlens .carousel-control-next:hover .carousel-control-next-icon {
+#carousel-contractlens .carousel-control-next:hover .carousel-control-next-icon,
+#carousel-stronger .carousel-control-prev:hover .carousel-control-prev-icon,
+#carousel-stronger .carousel-control-next:hover .carousel-control-next-icon {
   background-color: var(--accent-1, #6ee7b7);
   transform: scale(1.08);
 }
 
-#carousel-contractlens .carousel-indicators [data-bs-target] {
+#carousel-contractlens .carousel-indicators [data-bs-target],
+#carousel-stronger .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -13589,8 +13596,20 @@ html {
   opacity: 1;
 }
 
-#carousel-contractlens .carousel-indicators .active {
+#carousel-contractlens .carousel-indicators .active,
+#carousel-stronger .carousel-indicators .active {
   background-color: var(--accent-1, #6ee7b7);
+}
+
+.portfolio-screenshot-carousel {
+  width: min(100%, 22rem);
+  background: #070d14;
+}
+
+.portfolio-screenshot-carousel .carousel-item img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
 }
 
 /* ============================================================

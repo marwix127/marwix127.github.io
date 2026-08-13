@@ -588,16 +588,98 @@
                                             style="color:#697991;"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
-                                <video class="img-fluid rounded mb-5 w-50" data-src="assets/videos/stronger-demo.mp4"
-                                    controls loop playsinline></video>
+                                <h2>Descripción:</h2>
                                 <p class="mb-4">
-                                    Aplicación móvil de gestión de entrenamientos y dietas con IA. Permite a los
-                                    usuarios crear y gestionar sus entrenamientos y dietas, así como seguir su progreso
-                                    detalladamente con gráficos y datos, además de tener un asistente IA con acceso a
-                                    sus
-                                    entrenamientos para guiarles a conseguir sus objetivos y resolver cualquier duda.
+                                    Aplicación Flutter para registrar y gestionar entrenamientos, consultar la
+                                    evolución física y recibir orientación personalizada mediante Gemini. Incluye
+                                    historial de sesiones, sugerencias de series basadas en entrenamientos anteriores,
+                                    gráficos de progreso, seguimiento de composición corporal y un mapa de recuperación
+                                    de la fatiga muscular. Los datos y ejercicios personales están aislados por usuario
+                                    mediante Firebase Auth y Cloud Firestore.
                                 </p>
-                                <a class="btn btn-primary" href="https://github.com/marwix127/business_ia"
+                                <div id="carousel-stronger"
+                                    class="carousel slide portfolio-screenshot-carousel rounded overflow-hidden mb-5 mx-auto"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Captura 1"></button>
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="1" aria-label="Captura 2"></button>
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="2" aria-label="Captura 3"></button>
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="3" aria-label="Captura 4"></button>
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="4" aria-label="Captura 5"></button>
+                                        <button type="button" data-bs-target="#carousel-stronger"
+                                            data-bs-slide-to="5" aria-label="Captura 6"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/menu.jpg"
+                                                alt="Menú principal de Stronger" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/training.jpg"
+                                                alt="Gestión de entrenamientos en Stronger" loading="lazy" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/graphic.jpg"
+                                                alt="Gráficos de progreso en Stronger" loading="lazy" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/fatigue.jpg"
+                                                alt="Seguimiento de fatiga en Stronger" loading="lazy" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/chat.jpg"
+                                                alt="Asistente de inteligencia artificial de Stronger" loading="lazy" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="assets/img/portfolio/stronger/body.jpg"
+                                                alt="Seguimiento corporal en Stronger" loading="lazy" />
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-stronger" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-stronger" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                                <h2>Stack tecnológico:</h2>
+                                <p>
+                                    <strong>Aplicación</strong> — Flutter + Dart 3<br>
+                                    - <code>provider</code> + <code>ChangeNotifier</code> — gestión de estado<br>
+                                    - <code>go_router</code> — navegación declarativa y rutas protegidas<br>
+                                    - <code>fl_chart</code> — gráficos de volumen, peso y composición corporal<br>
+                                    - <code>shared_preferences</code> — persistencia local de borradores y preferencias
+                                </p>
+                                <p>
+                                    <strong>Backend y datos</strong><br>
+                                    - Firebase Authentication — acceso mediante email<br>
+                                    - Cloud Firestore — entrenamientos, mediciones, fatiga y ejercicios personales<br>
+                                    - Firebase App Check — protección del acceso a los servicios
+                                </p>
+                                <p>
+                                    <strong>Inteligencia artificial</strong><br>
+                                    - Firebase AI Logic + <code>Gemini 3.5 Flash</code><br>
+                                    - Coach contextual con acceso a los entrenamientos y medidas del usuario<br>
+                                    - Peticiones mediante el proxy de Firebase, sin exponer credenciales de Gemini en la
+                                    aplicación
+                                </p>
+                                <p>
+                                    <strong>Calidad</strong><br>
+                                    - 168 tests unitarios, de widgets y de flujo, con un 85 % de cobertura<br>
+                                    - Pruebas E2E en Android y validación de las reglas de Firestore<br>
+                                    - Integración continua con GitHub Actions
+                                </p>
+                                <a class="btn btn-primary" href="https://github.com/marwix127/Stronger"
                                     target="_blank">
                                     <i class="fa-brands fa-github"></i> Ver Repositorio
                                 </a>
